@@ -106,11 +106,11 @@ const App = () => {
               alert(
                 typeof error.response.data === "string"
                   ? error.response.data
-                  : "Connection failed. Try again! If it's still not working, please contact us via Twitter @ourchatstory."
+                  : "Connection failed. Try again!"
               );
             } catch (error) {
               alert(
-                "Connection failed. Try again! If it's still not working, please contact us via Twitter @ourchatstory."
+                "Connection failed. Try again!"
               );
             }
           });

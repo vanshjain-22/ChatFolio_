@@ -54,7 +54,7 @@ const Dashboard = ({ drawData, isDemo }) => {
           navigator
             .share({
               title: "OurChatStory",
-              text: "Look at our #WhatsAppWrapped. I made it using OurChatStory.co!",
+              text: "Look at our #WhatsAppWrapped. I made it using Chatfolio.co!",
               files: [file],
             })
             .then(() =>
@@ -220,7 +220,7 @@ const Dashboard = ({ drawData, isDemo }) => {
                     "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
                 }}
               >
-                Made using OurChatStory.co
+                Made using Chatfolio.co
               </Text>
             </HStack>
           </Center>

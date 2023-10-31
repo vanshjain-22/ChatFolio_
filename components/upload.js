@@ -112,17 +112,17 @@ const Upload = ({
             alert(
               typeof error.response.data.detail === "string"
                 ? error.response.data.detail
-                : "Connection failed. Try again! If it's still not working, please contact us via Twitter @ourchatstory."
+                : "Connection failed. Try again!"
             );
           } catch (error) {
             alert(
-              "Connection failed. Try again! If it's still not working, please contact us via Twitter @ourchatstory."
+              "Connection failed. Try again!"
             );
           }
         });
     } else {
       alert(
-        "Please upload .txt or .zip files only. If it's still not working, please contact us via Twitter @ourchatstory."
+        "Please upload .txt or .zip files only."
       );
     }
   };
@@ -295,7 +295,7 @@ const Upload = ({
                           Click on &quot;More&quot; &gt; &quot;Export chat&quot;
                           &gt; &quot;Without media&quot;.
                         </ListItem>
-                        <ListItem>Share it to OurChatStory app.</ListItem>
+                        <ListItem>Share it to Chatfolio app.</ListItem>
                       </OrderedList>
                     </Text>
                   </div>

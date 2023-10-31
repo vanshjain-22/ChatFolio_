@@ -48,7 +48,7 @@ export default function Privacy() {
 
         <h2>WE DONT OWN A DATABASE</h2>
         <p>
-          OurChatStory servers does not connect to a database and hence we have
+          Chatfolio servers does not connect to a database and hence we have
           a ZERO-DATA-SRORAGE-POLICY. When you use our tool, our server get your
           WhatsApp messages in order to perform the analysis. However, we do not
           store any of your personal data or messages on our servers, and all
