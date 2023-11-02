@@ -64,18 +64,19 @@ const Intro = ({ setShowUploader }) => {
         <h1 className="snap-child">
           <Box>
             <Box bgColor={"#9b1fe8"}>
-              <Marquee
+              {/* <Marquee
                 id="marquee"
-                gradient={true}
-                speed={40}
+                // gradient={true}
+                // speed={40}
                 gradientColor={[155, 31, 232]}
                 gradientWidth={30}
                 pauseOnHover={true}
-              >
-                {[...Array(10)].map((i) => (
+              > */}
+                {/* {[...Array(10)].map((i) => (
+                  
                   <Text
                     key={i}
-                    as="span"
+                    // as="span"
                     fontSize={{ base: "2xl", md: "2xl", sm: "2xl", lg: "xl" }}
                     fontWeight="bold"
                     color="white"
@@ -83,8 +84,35 @@ const Intro = ({ setShowUploader }) => {
                   >
                     #WhatsAppWrapped
                   </Text>
-                ))}
-              </Marquee>
+
+                  
+                ))} */}
+                <HStack
+  p="1rem 1.5rem 0.6rem 1.5rem"
+  align="center"
+  bgColor={"#9b1fe8"}
+  w="100%"
+  direction="row"
+  zIndex="50"
+  h="9.5vh"
+  overflowX="auto" // Allows for horizontal scrolling if elements overflow
+>
+  {[...Array(7)].map((item, i) => (
+    <Text
+      key={i}
+      fontSize={{ base: "2xl", md: "2xl", sm: "2xl", lg: "xl" }}
+      fontWeight="bold"
+      color="white"
+      m="0.5rem"
+    >
+      #WhatsAppWrapped
+    </Text>
+  ))}
+</HStack>
+
+
+
+              {/* </Marquee> */}
             </Box>
 
             <VStack
@@ -170,7 +198,7 @@ const Intro = ({ setShowUploader }) => {
                     fontWeight="600"
                     align={"start"}
                   >
-                    2022
+                    Whatsapp
                   </Text>
                 </HStack>
 
@@ -185,7 +213,7 @@ const Intro = ({ setShowUploader }) => {
                 </Text>
               </VStack>
 
-              <VStack
+              {/* <VStack
                 spacing="0.25rem"
                 w={"100%"}
                 // pt="2.5rem"
@@ -205,23 +233,23 @@ const Intro = ({ setShowUploader }) => {
                     swipe to see demo
                   </Text>
                 </Box>
-              </VStack>
+              </VStack> */}
               <Spacer />
             </VStack>
           </Box>
         </h1>
         {/* <Story component={welcome} /> */}
         {/* <Story component={arora} /> */}
-        <Story component={dummyIntro} />
+        {/* <Story component={dummyIntro} />
         <Story component={totalChat} />
         <Story component={mostActive} />
         <Story component={noTalk} />
-        <Story component={gridStats} />
+        <Story component={gridStats} /> */}
         {/* <Story component={monthly} /> */}
         {/* <Story component={hourlyGraph} /> */}
         {/* <Story component={countPie} /> */}
-        <Story component={wordCloud} />
-        <Story component={dummyCTA} />
+        {/* <Story component={wordCloud} />
+        <Story component={dummyCTA} /> */}
         {/* <div className="d-flex snap-child">
           <Box
             ml={{ base: "2rem", sm: "2rem", lg: "4.5rem" }}

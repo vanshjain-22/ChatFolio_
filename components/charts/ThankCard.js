@@ -46,16 +46,16 @@ const Card6 = ({ drawData }) => {
       <Text color="#F5F5F5" fontSize="3xl" align="center">
         This was
       </Text>
-      <Image h="80px" src="static/compress/logo2.webp" alt="OurChatStory"/>
+      {/* <Image h="80px" src="static/compress/logo2.webp" alt="OurChatStory"/> */}
       <Text color="#F5F5F5" fontSize="4xl" align="center" pb="1rem" >
-        <b>OurChatStory</b>
+        <b>Chatfolio</b>
       </Text>
       <Text color="#F5F5F5" fontSize="xl" align="center">
-        While we create many more amazing stories together, let&apos;s share this with friends
+        We hope you enjoyed your Chatfolio with your friend.
       </Text>
-      <Text color="#F5F5F5" fontSize="xl" align="center">
+      {/* <Text color="#F5F5F5" fontSize="xl" align="center">
         Because every story is<br />unique and worth sharing
-      </Text>
+      </Text> */}
       {/* <Box zIndex={10000}>
         <Text color="#F5F5F5" fontSize="sm" align="center">
           Made with ❤️ by

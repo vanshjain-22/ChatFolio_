@@ -9,8 +9,8 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
 
-          <title>WhatsApp Wrapped - Chat Insights and Analysis</title>
-          <meta
+          <title>Chatfolio</title>
+          {/* <meta
             name="description"
             content="Get Spotify Wrapped style insights of your WhatsApp chats with your friends like who texts you first, who texts more, when y'all text the most and more!"
           />
@@ -49,7 +49,7 @@ export default class MyDocument extends Document {
           <meta
             name="twitter:image"
             content="https://ourchatstory.co/banner_sdd.png"
-          />
+          /> */}
 
           <link rel="manifest" href="manifest.json" />
 

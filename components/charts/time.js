@@ -67,7 +67,7 @@ const Card6 = ({ drawData, isShared }) => {
       borderRadius="1rem"
       pt="1rem"
       pb="1rem"
-      animation={zoomAnimation}
+      // animation={zoomAnimation}
       style={{
         textShadow:
           "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",

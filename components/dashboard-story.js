@@ -36,39 +36,39 @@ const Dashboard = ({ drawData, isDemo }) => {
   const [storyIndex, setStoryIndex] = useState(0);
 
   const ref = useRef();
-  const onButtonClick = useCallback(() => {
-    if (ref.current === null) {
-      return;
-    }
-    setIsShared(true);
-    htmlToImage
-      .toBlob(document.body)
-      .then((dataUrl) => {
-        const file = new File([dataUrl], "share.png", { type: dataUrl.type });
-        // console.log("file", file);
-        // const link = document.createElement("a");
-        // link.download = "my-image-name.png";
-        // link.href = dataUrl;
-        // link.click();
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          navigator
-            .share({
-              title: "OurChatStory",
-              text: "Look at our #WhatsAppWrapped. I made it using Chatfolio.co!",
-              files: [file],
-            })
-            .then(() =>
-              console.log("Share was successful.")
-            )
-            .catch((error) => console.log(error));
-          setIsShared(false);
-        } else console.log("no share support");
-      })
-      .catch((err) => {
-        console.log(err);
-        setIsShared(false);
-      });
-  }, [ref]);
+  // const onButtonClick = useCallback(() => {
+  //   if (ref.current === null) {
+  //     return;
+  //   }
+  //   setIsShared(true);
+  //   htmlToImage
+  //     .toBlob(document.body)
+  //     .then((dataUrl) => {
+  //       const file = new File([dataUrl], "share.png", { type: dataUrl.type });
+  //       // console.log("file", file);
+  //       // const link = document.createElement("a");
+  //       // link.download = "my-image-name.png";
+  //       // link.href = dataUrl;
+  //       // link.click();
+  //       if (navigator.canShare && navigator.canShare({ files: [file] })) {
+  //         navigator
+  //           .share({
+  //             title: "Chatfolio",
+  //             text: "",
+  //             files: [file],
+  //           })
+  //           .then(() =>
+  //             console.log("Share was successful.")
+  //           )
+  //           .catch((error) => console.log(error));
+  //         setIsShared(false);
+  //       } else console.log("no share support");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       setIsShared(false);
+  //     });
+  // }, [ref]);
   <></>
   const pStories = [
     {
@@ -205,12 +205,12 @@ const Dashboard = ({ drawData, isDemo }) => {
               align="center"
               bottom="15vh"
             >
-              <Image
+              {/* <Image
                 boxSize="3vh"
                 src="static/compress/logo2.webp"
                 alt="OurChatStory"
                 style={{ imageRendering: "crisp-edges" }}
-              />
+              /> */}
               <Text
                 align="center"
                 color="white"
@@ -220,7 +220,6 @@ const Dashboard = ({ drawData, isDemo }) => {
                     "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
                 }}
               >
-                Made using Chatfolio.co
               </Text>
             </HStack>
           </Center>
@@ -310,7 +309,7 @@ const Dashboard = ({ drawData, isDemo }) => {
         bgColor={"black"}
       >
 
-        {isDemo ? (
+        {/* {isDemo ? (
           <Button
             w="100%"
             h="5vh"
@@ -330,7 +329,7 @@ const Dashboard = ({ drawData, isDemo }) => {
             rightIcon={isShared ? <Spinner color="black" /> : <HiShare />}
             w="100%"
             h="5vh"
-            onClick={onButtonClick}
+            // onClick={onButtonClick}
             position="sticky"
             bottom="0vh"
             zIndex={10003}
@@ -343,7 +342,7 @@ const Dashboard = ({ drawData, isDemo }) => {
           </Button>
         ) : (
           ""
-        )}
+        )} */}
       </Box>
     </Box>
   );

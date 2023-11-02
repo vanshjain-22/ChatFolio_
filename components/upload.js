@@ -189,11 +189,11 @@ const Upload = ({
             textAlign="center"
           >
             <Text fontSize={{ base: "2xl", sm: "1xl", lg: "4xl" }}>
-              Get your
-              <Text as={"span"} color={"primary.400"}>
+              Instructions
+              {/* <Text as={"span"} color={"primary.400"}>
                 {" "}
                 #WhatsAppWrapped
-              </Text>
+              </Text> */}
             </Text>
 
             {/* <Text as={"span"} color={"green.400"}>
@@ -210,13 +210,7 @@ const Upload = ({
             >
               <Divider />
 
-              <Center>
-                <TabList>
-                  <Tab>Android</Tab>
-                  <Tab>iPhone</Tab>
-                  <Tab>Desktop</Tab>
-                </TabList>
-              </Center>
+              
               <Divider />
 
               {/* <Heading
@@ -371,7 +365,7 @@ const Upload = ({
                         h="100%"
                         justifyContent="center"
                         align="center"
-                        border="1px dashed #cef23f"
+                        // border="1px dashed #cef23f"
                         pr="1rem"
                         pl="1rem"
                         pt="0.5rem"
@@ -380,27 +374,27 @@ const Upload = ({
                         borderRadius="0.5rem"
                         transition={"0.4s"}
                         _hover={{
-                          bgColor: "#cef23f10",
+                          // bgColor: "#cef23f10",
                         }}
                       >
-                        <IconButton
+                        {/* <IconButton
                           aria-label="Upload"
                           icon={<BiDownload size="1.5em" />}
                           variant="none"
                           colorScheme="transparent"
-                          color={"#cef23f"}
+                          // color={"#cef23f"}
                           isDisabled={isUploading}
                           isActive={!isUploading}
-                        />
+                        /> */}
 
-                        <Text fontSize="md" fontWeight="300" color="#cef23f">
+                        {/* <Text fontSize="md" fontWeight="300" color="#cef23f">
                           <u>{isUploading ? "" : "upload"}</u>
                           {isUploading
                             ? "uploading..."
                             : " or drop your chat here"}
-                        </Text>
+                        </Text> */}
                         <Spacer />
-                        <Text
+                        {/* <Text
                           fontSize="sm"
                           color="#cef23f"
                           opacity={0.8}
@@ -408,7 +402,7 @@ const Upload = ({
                           textAlign="center"
                         >
                           TXT, ZIP
-                        </Text>
+                        </Text> */}
                       </HStack>
                     </FileUploader>
                   </Box>
@@ -460,7 +454,7 @@ const Upload = ({
                         }}
                       />
                     </Button>
-                    <Button
+                    {/* <Button
                       variant="link"
                       // size="sm"
                       colorScheme="primary"
@@ -472,7 +466,7 @@ const Upload = ({
                       }}
                     >
                       See a demo
-                    </Button>
+                    </Button> */}
                   </>
                 )}
               </VStack>

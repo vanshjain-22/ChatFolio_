@@ -53,7 +53,7 @@ const Card4 = ({ drawData }) => {
       border="2px solid orange"
       borderRadius="1rem"
       p="1rem"
-      animation={zoomAnimation}
+      // animation={zoomAnimation}
     >
       <Heading mt="4rem" fontSize="3xl" textAlign="center" fontWeight="bold"
         style={{
@@ -75,7 +75,7 @@ const Card4 = ({ drawData }) => {
         {drawData.most_active_member.member}
       </Text>
       <Box align="center" width="100%" height="65%"
-        animation={rotateAnimation}
+        // animation={rotateAnimation}
       >
         <VictoryPie
           height="300"

@@ -28,13 +28,13 @@ const Card1 = ({ drawData }) => {
       spacing="1.5rem"
       align="center"
       justify="center"
-      bgImage={parser.get_random_element(["/static/dark/v2bg14.webp", "/static/dark/v2bg3.webp"], drawData.members)}
+      // bgImage={parser.get_random_element(["/static/dark/v2bg14.webp", "/static/dark/v2bg3.webp"], drawData.members)}
       // bgBlendMode="overlay"
       // add blur to the background image
       // filter="blur(10px)"
       // backdropFilter="blur(70px) hue-rotate(90deg)"
       // bgRepeat="no-repeat"
-      bgSize="cover"
+      // bgSize="cover"
       w="100%"
       h="78vh"
       bgColor="gray"

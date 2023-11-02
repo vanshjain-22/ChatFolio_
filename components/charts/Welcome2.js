@@ -7,13 +7,13 @@ const Card6 = ({ drawData }) => {
       align="center"
       justify="center"
       spacing="1rem"
-      bgImage={parser.get_random_element(
-        ["static/compress/v2bg0.webp", "static/dark/v2bg6.webp"],
-        drawData.members
-      )}
-      bgBlendMode={"multiply"}
-      bgRepeat="no-repeat"
-      bgSize="cover"
+      // bgImage={parser.get_random_element(
+      //   ["static/compress/v2bg0.webp", "static/dark/v2bg6.webp"],
+      //   drawData.members
+      // )}
+      // bgBlendMode={"multiply"}
+      // bgRepeat="no-repeat"
+      // bgSize="cover"
       w="100%"
       h="78vh"
       bgColor="#6f0cbb"

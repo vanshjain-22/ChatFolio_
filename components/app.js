@@ -152,7 +152,59 @@ const App = () => {
         " "
       )}
 
-      <HStack
+<HStack
+  p="1rem 1.5rem 0.6rem 1.5rem"
+  align="center"
+  bgColor={"#000"}
+  w="100%"
+  // position="fixed"
+  direction={["column", "row"]}
+  zIndex="50"
+  h="10vh"
+>
+  {process.env.NEXT_PUBLIC_ENV === "staging" ? (
+    <>
+      <Text textColor={"white"}> Staging </Text>
+    </>
+  ) : (
+    ""
+  )}
+
+  {/* Add your text here in the middle of the stack */}
+  <Text textColor={"white"}  flex="1" textAlign="center" marginLeft="600px"
+  fontSize="6xl"
+  color="white"
+  pt={"1rem"}
+  w={"100%"}
+  fontWeight="600"
+  align={"start"}
+  marginBottom="20px">
+    CHATFOLIO
+  </Text>
+
+  <Spacer w={"100%"} />
+  <Button
+    colorScheme="primary"
+    p={{
+      base: ["2rem", "1.5rem"],
+      sm: ["2rem", "1.5rem"],
+      lg: ["2rem", "1.5rem"],
+    }}
+    borderRadius={50}
+    onClick={() => {
+      setShowUploader(true);
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+    }}
+  >
+    <Text fontSize={{ base: "sm", sm: "sm", lg: "md" }} color="dark">
+      Make your wrap
+    </Text>
+  </Button>
+</HStack>
+
+
+      {/* <HStack
         p="1rem 1.5rem 0.6rem 1.5rem"
         align="center"
         bgColor={"#000"}
@@ -162,20 +214,18 @@ const App = () => {
         zIndex="50"
         h="10vh"
       >
-        <CImage
-          boxSize="45px"
-          src="static/compress/logo2.webp"
-          alt="OurChatStory"
-          style={{ imageRendering: "crisp-edges" }}
-        />
+        
+
+        
         {process.env.NEXT_PUBLIC_ENV === "staging" ? (
           <>
-            {/* <Spacer w={"100%"} /> */}
+            
             <Text textColor={"white"}> Staging </Text>
           </>
         ) : (
           ""
         )}
+        
         <Spacer w={"100%"} />
         <Button
           colorScheme="primary"
@@ -191,28 +241,18 @@ const App = () => {
             document.body.style.overflow = "hidden";
           }}
         >
-          {/* <label for="hid" cursor="pointer">
-                      </label> */}
+          
           <Text fontSize={{ base: "sm", sm: "sm", lg: "md" }} color="dark">
             Make your wrap
           </Text>
-          {/* <input
-                        id="hid"
-                        type="file"
-                        name="file"
-                        title=""
-                        hidden
-                        className="custom-file-input"
-                        size="100"
-                        onChange={uploadFile}
-                    /> */}
+          
         </Button>
-      </HStack>
+      </HStack> */}
       <Box>
         <Box>
           <Intro setShowUploader={setShowUploader} />
 
-          <Box>
+          {/* <Box>
             <CImage
               src="static/original/pink.svg"
               position="fixed"
@@ -250,8 +290,8 @@ const App = () => {
               opacity={0.6}
               zIndex={0}
               animation={spinAnimation}
-            />
-          </Box>
+            /> */}
+          {/* </Box> */}
         </Box>
 
         {/* <Box>
